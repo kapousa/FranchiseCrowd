@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FranchiseCrowd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('sub_pages/sidebar.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('content').innerHTML = data)
+                .catch(error => console.error('Error loading page:', error));
+        });
+    </script>
+
+    <div id="content"></div> <!-- Add this so content loads here -->
+
+    <!-- Main Container -->
+    <div class="container">
+        <header>
+            <h1>Investment Opportunities</h1>
+        </header>
+
+<div class="featured-container"> 
+    <section class="featured">
+        <div class="franchise-card">
+            <img src="images/coffee_shop.jpg" alt="Coffee Corner">
+            <h3>Coffee Corner</h3>
+            <p>A profitable coffee shop franchise with growing demand.</p>
+            <a href="franchise_opportunity.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="franchise-card">
+            <img src="images/resturant.jpg" alt="KWCC Restaurant">
+            <h3>KWCC Restaurant</h3>
+            <p>A profitable restaurant franchise with growing demand.</p>
+            <a href="franchise_opportunity.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="franchise-card">
+            <img src="images/football_club.jpg" alt="Xang Football Club">
+            <h3>Xang Football Club</h3>
+            <p>A profitable coffee shop franchise with growing demand.</p>
+            <a href="franchise_opportunity.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="franchise-card">
+            <img src="images/hypermarket.jpg" alt="TuTu Heypermarket">
+            <h3>TuTu Heypermarket</h3>
+            <p>A profitable hypermarket franchise with growing demand.</p>
+            <a href="franchise_opportunity.html" class="btn">Learn More</a>
+        </div>
+    </section>
+</div>
+
+    </div>
+</body>
+</html>

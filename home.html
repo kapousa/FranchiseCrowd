@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FranchiseCrowd</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('sub_pages/sidebar.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('content').innerHTML = data)
+                .catch(error => console.error('Error loading page:', error));
+        });
+    </script>
+    
+    <div id="content"></div> <!-- Sidebar Content -->
+
+    <!-- Main Container -->
+    <div class="container">
+        <header>
+            <h1>FranchiseCrowd</h1>
+            <p>Invest in Franchises, Share in the Rewards!</p>
+            <a href="franchise_opportunities.html" class="btn">Explore Opportunities</a>
+        </header>
+
+
+        <h2>Featured Opportunities</h2>
+<div class="featured-container"> 
+    <section class="featured">
+        <div class="franchise-card">
+            <img src="images/coffee_shop.jpg" alt="Coffee Corner">
+            <h3>Coffee Corner</h3>
+            <p>A profitable coffee shop franchise with growing demand.</p>
+            <a href="franchise_opportunity.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="franchise-card">
+            <img src="images/resturant.jpg" alt="KWCC Restaurant">
+            <h3>KWCC Restaurant</h3>
+            <p>A profitable restaurant franchise with growing demand.</p>
+            <a href="franchise_opportunity.html" class="btn">Learn More</a>
+        </div>
+    </section>
+</div>
+
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <p>Browse Opportunities</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>Invest Securely</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>Earn & Grow</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FranchiseCrowd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('sub_pages/sidebar.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('content').innerHTML = data)
+                .catch(error => console.error('Error loading page:', error));
+        });
+    </script>
+
+    <div id="content"></div> <!-- Add this so content loads here -->
+
+    <!-- Main Container -->
+    <div class="container">
+        <header>
+            <h1>Investment Opportunities</h1>
+        </header>
+
+<div class="featured-container"> 
+    <section class="featured">
+        <div class="franchise-card" style="width: 100%;">
+            <img src="images/coffee_shop.jpg" alt="Coffee Corner">
+            <h3>Coffee Corner</h3>
+            <p style="text-align: left;">A highly profitable coffee shop franchise that caters to the ever-growing demand for premium coffee and exceptional customer experiences. With a proven business model, strong brand recognition, and a loyal customer base, this franchise offers investors a lucrative opportunity in the thriving specialty coffee industry. Featuring high-quality ingredients, an inviting ambiance, and a scalable expansion strategy, this franchise is ideal for entrepreneurs looking to capitalize on the booming coffee culture.</p>
+            <a href="invest_now.html" class="btn">Invest Now</a>
+        </div>
+    </section>
+</div>
+
+    </div>
+</body>
+</html>
